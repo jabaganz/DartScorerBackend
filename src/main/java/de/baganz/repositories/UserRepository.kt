@@ -1,4 +1,4 @@
-package de.baganz
+package de.baganz.repositories
 
 import de.baganz.dao.User
 import org.springframework.data.mongodb.repository.MongoRepository
@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository
  */
 
 @Repository
-interface MongoDbRepository : MongoRepository<User,String> {
+interface UserRepository : MongoRepository<User, String> {
 }

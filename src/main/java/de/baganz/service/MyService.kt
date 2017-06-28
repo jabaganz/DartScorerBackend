@@ -1,6 +1,6 @@
 package de.baganz.service
 
-import de.baganz.MongoDbRepository
+import de.baganz.repositories.UserRepository
 import de.baganz.dao.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -11,7 +11,7 @@ import javax.annotation.PostConstruct
 class MyService(){
 
     @Autowired
-    lateinit var repo : MongoDbRepository
+    lateinit var repo : UserRepository
 
 
 

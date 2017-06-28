@@ -15,7 +15,7 @@ open class MyRestController{
     fun greeting() : String {
         return "Hello World"
     }
-    
+
 
 
 }
