@@ -9,5 +9,8 @@ import org.springframework.stereotype.Repository
  */
 
 @Repository
-interface UserRepository : MongoRepository<User, String> {
+interface UserRepository : MongoRepository<User, Long> {
+
+    fun findUserByName(name : String): User
+
 }
